@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+<body>
+<link rel="stylesheet"  href="{% static 'editrate.css' %}">
+<form action="#" method="post">
+{% csrf_token %}
+{% for cardetails in cardet %}
+<h3>Current Rate_perday:</h3> <input type='text'  value={{cardetails.Rate_perday}}><br><br>
+<h3>Set Rate_perday:</h3><br><br><input type='text'  name='Rate_perday'><br><br>
+{% endfor %}
+<div class="submit_button">
+<input type='submit' value='edit' name='edit'>
+</div>
+</form>
+</body>
+</html>

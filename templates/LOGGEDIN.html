@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN PAGE</title>
+	<link rel="stylesheet"  href="{% static 'LOGGEDIN.css' %}">
+</head>
+
+
+
+<body>
+	<header>
+		<div class="title">
+			<h1>WELCOME</h1>
+
+
+<form action="editpassword.html" method='POST'>
+{% csrf_token %}
+{% for username in user %}
+   <div class="form">
+   <form>
+   <div class="input-box">
+   <input type="text" value={{username.username}} name="username" ><br>
+   </div>
+   <div class="submit-button">
+
+
+   <input type="submit" value="EDIT" name="EDIT">
+   {% endfor %}
+   </div>
+   </form>
+   </div>
+
+</form>
+
+<form action="bookcars.html" method='POST'>
+{% csrf_token %}
+{% for username in user %}
+	<div class="form">
+	<form>
+	<div class="input-box">
+	<input type="hidden" value={{username.username}} name="username">
+	</div>
+	<div class="submit_button">
+	<input type="submit" value="BOOKCAR" name="BOOKCAR">
+	</div>
+  	</form>
+  	</div>
+{% endfor %}
+</form>
+</div>
+</header>
+</body>
+</html>

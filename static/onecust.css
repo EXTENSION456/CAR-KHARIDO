@@ -1,0 +1,68 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+header{
+	background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(2.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+ .title{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,50%);
+	
+}
+ 
+.title h1{
+	color: yellow;
+	font-size: 70px;
+}
+.form .input-box
+{
+	position: relative;
+	margin: 20px 0;
+}
+.form .input-box input
+{
+	width: 100%;
+	font-size: 16px
+	border: none;
+	border-bottom: 2px solid #777;
+	outline: none;
+	padding: 10px;
+	padding-left: 25px;
+	box-sizing: border-box;
+	font-weight: bold;
+	color: black;
+}
+.form .submit-button input[type="submit"]{
+	position: absolute;
+	top: 100%;
+	right: 32%;
+	font-size: 30px;
+	transform: translate(-50%,50%);
+}
+.form .submit-button input[type="submit"]{
+	
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	transition: 0.6s ease;
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px solid white;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.form .submit-button input[type="submit"]:hover{
+	border-color: white;
+	color:yellow;
+
+}

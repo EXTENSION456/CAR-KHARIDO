@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet"  href="{% static 'adminloggedin1.css' %}">
+</head>
+<body>
+	<header>
+		<div>
+			<ul>
+				<li><a href="customer_info.html">View Customers</a></li>
+				<li><a href="cars.html">Enter Car Details</a></li>
+				<li><a href="delete.html">Delete</a></li>
+				<li><a href="onecust.html">View Particular Customer</a></li>
+				<li><a href="viewcars.html">View Cars</a></li>
+				<li><a href="editrate.html">Edit Price</a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<h1>Welcome {% for us in user %}
+  {{us.username}}
+{% endfor %}
+</h1>
+		</div>
+	</header>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+<body>
+<link rel="stylesheet"  href="{% static 'editrate.css' %}">
+<header>
+		<div class="title">
+			<h1>ENTER CAR ID</h1>
+{{Car_Id}}
+<form action='#' method='post'>
+{% csrf_token %}
+<div class="form">
+	<form>
+		<div class="input-box">
+
+<h2>CAR_ID:</h2><input type='text' name='Car_Id' value={{Car_Id}}>
+</div>
+		<div class="submit-button">
+<input type='submit' value='submit' name='submit' >
+</div>
+	</form>
+	</div>
+	</form>
+<div class="form">
+
+</div>
+
+</div>
+</form>
+
+</body>
+
+</html>
